@@ -1,0 +1,60 @@
+h1 {
+    color: red;
+}
+
+h2 {
+    color: blue;
+    text-decoration: wavy;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+p {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#banner {
+    background-color: darkgoldenrod;
+    padding: 30px;
+    color: whitesmoke;
+    text-align: center;
+    font-weight: bold;
+
+    font-size: 25px;
+}
+
+#nav {
+    background-color: cadetblue;
+    padding: 10px;
+    text-align: center;
+}
+
+#nav a {
+    color: aliceblue;
+    text-decoration: none;
+    font-size: large;
+    margin-right: 10px;
+}
+
+#nav a:hover {
+    background-color: red;
+    color: aliceblue;
+    padding: 10px;
+}
+
+#footer {
+    background-color: lightgray;
+    padding: 20px;
+}
+
+#main {
+    width: 80%;
+    margin: 0 auto;
+}
