@@ -16,18 +16,12 @@ h6 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-p {
-    font-family: 'Courier New', Courier, monospace;
-}
+
 
 #banner {
-    background-color: darkgoldenrod;
     padding: 30px;
-    color: whitesmoke;
-    text-align: center;
-    font-weight: bold;
-
     font-size: 25px;
+    
 }
 
 #nav {
@@ -54,7 +48,3 @@ p {
     padding: 20px;
 }
 
-#main {
-    width: 80%;
-    margin: 0 auto;
-}

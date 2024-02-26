@@ -3,23 +3,38 @@
 
 <head>
     <title>Home Page</title>
+    <link  rel="stylesheet" href="stylesheets/bootstrap.min.css">
     <link rel="stylesheet" href="stylesheets/style.css">
+    
 </head>
 
 <body>
     <div id="header">
-        <div id="banner">
+        <div id="banner" class="bg-secondary text-white text-center">
             <p>We have wild animals for sale</p>
         
         </div>
         <div id="nav">
 <!--This is a navbar-->
-<a href="index.html">Home</ca>
-    <a href="aboutus.html">About Us</ca>
-        <a href="contactus.html">Contact Us</ca>
+<nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Animal Protection</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link" aria-current="index.html" href="#">Home</a>
+          <a class="nav-link" href="aboutus.html">About Us</a>
+          <a class="nav-link" href="contactus.html">Contact Us</a>
+         
+        </div>
+      </div>
+    </div>
+  </nav>
 
         </div>
-        <div id="main">
+        <div id="main" class="container">
             <!-- This is a paragraph -->
             
             <h1>Home Page</h1>
@@ -52,6 +67,10 @@
         
         </div>
     </div>
+
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+    <script src="scripts/site.js"></script>
    
               
                 
