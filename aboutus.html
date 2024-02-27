@@ -5,28 +5,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
+    <link  rel="stylesheet" href="stylesheets/bootstrap.min.css">
     <link rel="stylesheet" href="stylesheets/style.css">
 </head>
 
 <body>
-<div id="header">
-
-    <div id="banner">
-        <p>We have wild animals for sale</p>
-
-    </div>
-    <div id="nav">
-
-        <a href="index.html">Home</ca>
-            <a href="aboutus.html">About Us</ca>
-                <a href="contactus.html">Contact Us</ca>
-                    <h1>About Us</h1>
-                    <h2>Brads Zoo Keeper</h2>
+    <div id="header">
+        <div id="banner" class="bg-secondary text-white text-center">
+            <p>We have wild animals for sale</p>
         
-                    <hr />
-
+        </div>
+        <div id="nav">
+<!--This is a navbar-->
+<nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Animal Protection</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link" aria-current="" href="index.html">Home</a>
+          <a class="nav-link" href="aboutus.html">About Us</a>
+          <a class="nav-link" href="contactus.html">Contact Us</a>
+         
+        </div>
+      </div>
     </div>
-    <div id="main">
+  </nav>
+  </div>
+    <div id="main" class="container">
 <img src="images/lepard.JPG" alt="snow lepard" height="320" width="500" />
 
 <p>Brad is a 20 year old student who is currently in his senior year at the University of Maryland. He
@@ -40,12 +48,48 @@
 
 <h2>Daily Task</h2>
 
-<ul>
-    <li>Walk the dog</li>
-    <li>Feed the dogs</li>
-    <li>Clean the zoo</li>
-    <li>Clean the zoo animals</li>
-</ul>
+<div class="row">
+    <div class="col">
+        <div class="card" style="width: 18rem;">
+            <img src="images/bath.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Walk the dog</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, nihil. Accusantium libero dolore omnis eum nulla pariatur modi molestiae suscipit, amet exercitationem quisquam! Neque ullam sequi ad consequuntur maiores nemo!</p>
+              <a href="contactus.html" class="btn btn-primary">Learn more</a>
+            </div>
+          </div>
+    </div>
+    <div class="col">
+        <div class="card" style="width: 18rem;">
+            <img src="images/feed.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Feed the dogs</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo distinctio ab pariatur vitae, laboriosam, asperiores molestias dolorum qui inventore reiciendis ipsam. Distinctio corporis quas animi aut maiores eos doloremque incidunt.</p>
+              <a href="contactus.html" class="btn btn-primary">Learn more</a>
+            </div>
+          </div>
+    </div>
+    <div class="col">
+        <div class="card" style="width: 18rem;">
+        <img src="images/clean.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Clean the zoo</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum aperiam nostrum exercitationem modi odio architecto ex laudantium itaque voluptatem repellat. Atque sit ipsum odio, architecto omnis repellendus nam accusamus totam.</p>
+          <a href="contactus.html" class="btn btn-primary">Learn more</a>
+        </div>
+      </div></div>
+    <div class="col">
+        <div class="card" style="width: 18rem;">
+        <img src="images/bath.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Clean the zoo animals</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum, facere voluptatem eius molestias ipsum enim odit repudiandae quasi voluptatum ad totam modi quae quod dolores, neque iusto, aspernatur amet temporibus.</p>
+          <a href="contactus.html" class="btn btn-primary">Learn more</a>
+        </div>
+      </div></div>
+
+</div>
+
 
 <h2>Favorite Animal</h2>
 <ol>
@@ -57,7 +101,7 @@
 </ol>
 
 <h2>Favorite Food</h2>
-<table>
+<table class="table table-striped table-hover">
     <tr>
         <th>Food</th>
         <th>Description</th>
@@ -66,6 +110,18 @@
     </tr>
     <tr>
         <th>chicken</th>
+        <th>stew</th>
+        <th>$10</th>
+        <th>1</th>
+    </tr>
+    <tr>
+        <th>mutton</th>
+        <th>curry</th>
+        <th>$10</th>
+        <th>1</th>
+    </tr>
+    <tr>
+        <th>beef</th>
         <th>stew</th>
         <th>$10</th>
         <th>1</th>
@@ -84,6 +140,9 @@
 
 
 
+<script src="scripts/jquery.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+    <script src="scripts/site.js"></script>
    
 
                

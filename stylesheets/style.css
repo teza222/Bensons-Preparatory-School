@@ -37,12 +37,6 @@ h6 {
     margin-right: 10px;
 }
 
-#nav a:hover {
-    background-color: red;
-    color: aliceblue;
-    padding: 10px;
-}
-
 #footer {
     background-color: lightgray;
     padding: 20px;

@@ -5,45 +5,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact us</title>
+    <link  rel="stylesheet" href="stylesheets/bootstrap.min.css">
     <link rel="stylesheet" href="stylesheets/style.css">
 </head>
 
 <body>
 
     <div id="header">
-
-        <div id="banner">
-
+        <div id="banner" class="bg-secondary text-white text-center">
+            <p>We have wild animals for sale</p>
+        
         </div>
-        <div id="nav"><a href="index.html">Home</ca>
-            <a href="aboutus.html">About Us</ca>
-                <a href="contactus.html">Contact Us</ca>
+        <div id="nav">
+<!--This is a navbar-->
+<nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Animal Protection</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link" aria-current="" href="index.html">Home</a>
+          <a class="nav-link" href="aboutus.html">About Us</a>
+          <a class="nav-link" href="contactus.html">Contact Us</a>
+         
+        </div>
+      </div>
+    </div>
+  </nav>
                 
         </div>
-        <div id="main">
+        <div id="main" class="container">
             <h1>Contact us</h1>
             <form action="confirmation.html">
-                <label>Name: *</label>
+
+                <div class="mb-3">
+                    <label for="fullname" class="form-label">Name*</label>
+                    <input type="text" class="form-control" id="fullname" placeholder="eg. John Doe">
+                  </div>
+                  <div class="mb-3">
+                    <label for="email" class="form-label">Email*</label>
+                    <input type="email" class="form-control" id="email" placeholder="eg. example@mail.com">
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="employed" class="form-label">Are you employed?*</label>
+                </br>
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Yes
+                </label>
+                <input class="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault2">
+                <label class="form-check-label" for="flexRadioDefault2">
+                  No
+                </label>
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="inquiry" class="form-label">State your inquiry: *</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+                
                 <br />
-                <input required type="text" id="name" name="name" />
-            
-                <br /><br />
-                <label>Email Address: *</label>
-                <br />
-                <input required type="email" id="email" name="email" />
-                <br /><br />
-                <label>Are you employed: </label>
-                <br />
-                <input type="radio" value="Y" name="employed" /> Yes
-                <input type="radio" value="N" name="employed" /> No
-                <br /><br />
-                <label>State your Question: *</label>
-                <br />
-                <textarea required cols="50" rows="10" maxlength="150"></textarea>
-                <br />
-                <input type="submit" value="Submit" />
-                <button type="button" onclick="ClearForm()">Clear</button>
+                <input type="submit" class="btn btn-success" value="Submit" />
+                <button type="button" class="btn btn-warning" onclick="ClearForm()">Clear</button>
+                
             </form>
+        </br>
 
         </div>
         <div id="footer">
@@ -57,7 +86,10 @@
     <script src="scripts/site.js"></script>
 
     
-               
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+    <script src="scripts/site.js"></script>
+   
 
 
 </body>
