@@ -24,21 +24,14 @@ h6 {
     
 }
 
-#nav {
-    background-color: cadetblue;
-    padding: 10px;
-    text-align: center;
-}
 
-#nav a {
-    color: aliceblue;
-    text-decoration: none;
-    font-size: large;
-    margin-right: 10px;
-}
+
+
 
 #footer {
     background-color: lightgray;
     padding: 20px;
 }
+
+
 
