@@ -16,6 +16,13 @@ h6 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+p {
+    font-family: 'Franklin Gothic Medium',
+        'Arial Narrow',
+        Arial,
+        sans-serif;
+}
+
 
 
 #banner {
@@ -24,7 +31,9 @@ h6 {
     
 }
 
-
+.justified-text {
+    text-align: justify;
+}
 
 
 

@@ -2,100 +2,225 @@
 <html>
 
 <head>
-    <title>Home Page</title>
-    <link  rel="stylesheet" href="stylesheets/bootstrap.min.css">
-    <link rel="stylesheet" href="stylesheets/style.css">
-    
+  <title>Home Page</title>
+  <link rel="stylesheet" href="stylesheets/bootstrap.min.css">
+  <link rel="stylesheet" href="stylesheets/style.css">
+
+
 </head>
 
 <body>
-    <div id="header">
-        <div id="banner" class="bg-secondary text-white text-center">
-            <p>We have wild animals for sale</p>
-        
+  <div id="header">
+    <div id="banner" class=" bg-primary  text-white text-center">
+      <img src="images/logo3.png" width="250" height="250" alt="logo">
+      <p>Doing our best for success!</p>
+    </div>
+
+
+
+
+    <div id="nav">
+      <!--This is a navbar-->
+
+      <nav class="navbar navbar-expand-lg bg-warning">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+            aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+
+
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Our School
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">History</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Mission and Vision</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Administration</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Clubs and Societies</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Students
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Deportment</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Registration</a></li>
+
+                </ul>
+              </li>
+
+
+              <li class="nav-item">
+                <a class="nav-link " href="#">Calender</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link " href="#">Parent Portal</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link " href="#">Contact Us</a>
+              </li>
+
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
         </div>
-        <div id="nav">
-<!--This is a navbar-->
-<nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Animal Protection</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-link active" aria-current="page"  href="index.html">Home</a>
-          <a class="nav-link" href="aboutus.html">About Us</a>
-          <a class="nav-link" href="contactus.html">Contact Us</a>
-         
+      </nav>
+    </div>
+    <div id="main" class="container">
+
+      <br>
+      <br>
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+            aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+            aria-label="Slide 5"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+            aria-label="Slide 6"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6"
+            aria-label="Slide 7"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7"
+            aria-label="Slide 8"></button>
         </div>
+
+
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/img3.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/img4.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/img5.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/img1.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/img2.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/img6.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/img7.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/img8.png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+
+
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-    </div>
-  </nav>
+
+      <br>
+      <br>
+      <div class="container">
+        
+        <div class="row">
+        <h1>Principal's Message</h1>
+        <div class="col justified-text" >
+          
+          <p >Dear Parents, Students, and Staff,
+          
+          Welcome to Benson Preparatory School! It is with great pleasure and enthusiasm that I extend a warm welcome to each and
+          every one of you as we embark on another exciting academic year.
+          
+          At Benson Prep, our mission is to provide a nurturing and inclusive learning environment where every student can thrive
+          academically, socially, and emotionally. We are committed to fostering a love for learning, promoting critical thinking
+          skills, and instilling values of respect, responsibility, and resilience in our students.
+          
+          As the principal, I am dedicated to ensuring that each student receives the support and guidance they need to reach
+          their full potential. Our team of experienced educators is passionate about creating engaging and enriching learning
+          experiences that inspire curiosity and creativity.
+          
+          We believe that education is a partnership between the school, parents, and the community. Together, we can create a
+          strong foundation for our students to succeed not only in the classroom but also in their future endeavors.
+          
+          I encourage you to actively participate in your child's education and to communicate openly with our staff. Together, we
+          can make a positive difference in the lives of our students and help them achieve their dreams.
+          
+          I am excited about the opportunities that lie ahead for our school community, and I look forward to working closely with
+          each of you throughout the school year.
+         </p>
+         <p>Warm regards,
+        
+        Dr. James Findley
+        Principal, Benson Preparatory School</p>
 
         </div>
-        <div id="main" class="container">
-            <!-- This is a paragraph -->
-            
-            <h1>Home Page</h1>
-            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="images/lion.jpg" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="images/rihno.jpg" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="images/bear.jpg" class="d-block w-100" alt="...">
-                  </div>
-            
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/JTlveCrymV8?si=u8ayGvmvhusJRKt2"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda
-                <br />
-                quia repellat non, reprehenderit corrupti
-                esse, earum, aperiam nulla commodi voluptatem pariatur. Vel culpa rem, vitae recusandae dolorem est.
-                Delectus,
-                sint.
-            </p>
-            
-            <video width="560" height="315" controls>
-                <scorce src="movie.mp4" type="video/mp4">
-                    Your not supported
-            </video>
-        
+        <div class="col">
+          <img width="400" src="images/principal.jpg ">
         </div>
-        <div id="footer">
-            <a href="https://www.amazon.com" target="_blank">Amazons</a>
-            <p>Copyright &copy; 2021</p>
-        
+        <div class="col"></div>
         </div>
+
+      </div>
+
+<br>
+<br>
     </div>
 
-    <script src="scripts/jquery.min.js"></script>
-    <script src="scripts/bootstrap.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+
     <script src="scripts/site.js"></script>
-   
-              
-                
+
+
+
 </body>
 
 </html>
