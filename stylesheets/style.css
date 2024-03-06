@@ -16,17 +16,12 @@ h6 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-p {
-    font-family: 'Franklin Gothic Medium',
-        'Arial Narrow',
-        Arial,
-        sans-serif;
-}
+
 
 
 
 #banner {
-    padding: 30px;
+    padding: 10px;
     font-size: 25px;
     
 }
@@ -36,10 +31,17 @@ p {
 }
 
 
+a {
+  color: white;  
+}
 
-#footer {
-    background-color: lightgray;
-    padding: 20px;
+
+
+footer {
+    background-color: lightslategray;
+    color: white;
+    padding: 30px;
+    text-align: center;
 }
 
 
