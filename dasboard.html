@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <!-- Google Charts library -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+</head>
+
+<body>
+
+    <!-- nav -->
+    <nav class="navbar navbar-expand-lg bg-warning">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll navbar-brand"
+                    style="--bs-scroll-height: 100px;">
+                    <img class="nav-item" src="images/logo3.png" alt="logo">
+                    <h2>Bensons Preparatory</h2>
+
+                </ul>
+                <form class="d-flex">
+                    <a  href="index.html" class="btn btn-outline-success">Logout</a>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Dashboard content -->
+    <div class="m-4 mt-1">
+        <div class="row">
+            <div class="col-2 " style="color: rgb(125, 125, 125);">
+                <br>
+                <div class="d-flex color-secondary" style="color: rgb(158, 147, 221);" onclick=" hideSection('dashboard')" >
+                    <i class="fas fa-tachometer-alt m-2"></i>
+                    <a type="button">
+                        <h5 class="mt-1">Dashboard</h5>
+                    </a>
+                    
+                </div>
+                <br>
+
+                <h6 class="bg-warning text-center" style="color: rgb(255, 255, 255);">ANALYTICS</h6>
+
+                <div class="d-flex color-secondary" onclick=" hideSection('grades')">
+                    <i class="fas fa-chart-line m-2"></i>
+                    <a type="button"  ><h6 class="mt-2">Grades</h6></a>
+                </div>
+                <div  class="d-flex color-secondary" onclick=" hideSection('index.html')" >
+                    <i class="fas fa-file m-2 " ></i>
+                    <a type="button">
+                        <h6 class="mt-2">Report Card</h6>
+                    </a>
+                   
+                </div>
+                
+                <div class="d-flex color-secondary" onclick=" hideSection('index.html')" >
+                    <i class="fas fa-pencil-alt m-2"></i>
+                    <a type="button">
+                        <h6 class="mt-2">Attendance</h6>
+                    </a>
+                    
+
+                </div>
+                <div class="d-flex color-secondary" onclick=" hideSection('index.html')">
+                    <i class="fas fa-window-maximize m-2"></i>
+                    <a type="button">
+                        <h6 class="mt-2">Comments</h6>
+                    </a>
+                    
+                </div>
+                <div class="d-flex color-secondary" onclick=" hideSection('index.html')">
+                    <i class="fas fa-dollar-sign m-2 "></i>
+                    <a type="button">
+                        <h6 class="mt-2 m-2">Fees</h6>
+                    </a>
+                    
+                </div>
+                <div class="d-flex color-secondary" onclick=" hideSection('index.html')">
+                    <i class="fas fa-signature m-2"></i>
+                    <a type="button">
+                        <h6 class="mt-2">Petition</h6>
+                    </a>
+                    
+                </div>
+
+                <div class="d-flex color-secondary" onclick=" hideSection('index.html')">
+                    <i class="fas fa-box m-2"></i>
+                    <a type="button">
+                        <h6 class="mt-2">Suggestion Box</h6>
+                    </a>
+                   
+                </div>
+
+            </div>
+            <div id="dashboard" class="col-10" >
+                <div class="row">
+
+               
+
+           
+            <!-- Second Column -->
+            <div class="col-8 vertical-line">
+                <br>
+                <div  class="card bg-warning border-warning m-2 " style="width: 38rem;" >
+                    <div class="card-body">
+                        <h5 class="card-title" >Welcom back, James Brown</h5>
+                       <br>
+                        <p class="card-text">You have successfully completed about
+                        60% of your studies. Keep it up!</p> 
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col m-2">
+                        <img src="images/kidphoto.jpg" class="rounded" width="280" alt="...">
+                    </div>
+
+                    <div  class="col m-2">
+                        <h4>JAMES C. BROWN</h4>
+                        
+                        <div class="row">
+                            <div class="col-5 ">
+                                <p style="font-weight: 500;">Student ID:  <br> Gender: <br>DOB: <br> Contact: <br>  Email: <br>Nationality: </p>
+                               
+                                
+                            </div>
+                            <div class="col-6">
+                                <p>3200162 <br> Male <br>June 11, 2017 <br> 876 342-5162 <br> jbrown@bprep.edu <br>Jamaican </p>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <br>
+                <br>
+                
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <!-- Chart.js canvas for the bar graph -->
+                            <canvas id="myChart" width="400" height="400"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                
+              
+               
+               
+                <!-- <div>
+                    <canvas id="signatureCanvas" width="300" height="150"></canvas>
+                    <button onclick="clearCanvas()">Clear Signature</button>
+                </div> -->
+
+            </div>
+            <!-- Third Column -->
+            <div class="col-4 mt-4">
+                <div class="card " style="background-color: rgb(199, 155, 230); color: rgb(254, 254, 254);">
+                    <div class="card-body">
+                       <div class="d-flex">
+
+                        <div class="text-center "> 
+                            <p style="font-weight: 500; font-size: 14px;">Total Days</h6>
+                            <h4 style="font-weight: 900;">180</h4>
+                        </div>
+<hr>
+                        <div class="text-center mx-2 ">
+                            <p style="font-weight: 500; font-size: 14px;">Present</h6>
+                            <h4 style="font-weight: 900;">98%</h4>
+                        </div>
+
+                        <div class="text-center mx-2 ">
+                            <p style="font-weight: 500; font-size: 14px;">Absent</h6>
+                            <h4 style="font-weight: 900;">2%</h4>
+                        </div>
+
+
+                        <div class="text-center mx-2 ">
+                            <p style="font-weight: 500; font-size: 14px;">Late</h6>
+                            <h4 style="font-weight: 900;">0%</h4>
+                        </div>
+                        
+
+                       </div>
+                    </div>
+                </div>
+
+                <div class="card mt-2" style="background-color: rgb(155, 230, 225); color: rgb(255, 255, 255);">
+                    <div class="card-body">
+                        <div class="text-center">
+                            <p style="font-size: larger; font-weight: 900;">GPA</p>
+                            <p style="font-size: 50px;  font-weight: 900;">3.90</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            </div>
+
+            <div id="grades" class="col">
+               <div class="m-4">
+                
+                <div class="card text-center">
+                    <div class="card-header">
+                        <ul class="nav nav-tabs card-header-tabs">
+                            <li class="nav-item">
+                                <a class="nav-link " aria-current="true" href="#">Christmas Term</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Easter Term</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="true">Summer Term</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-body">
+                    <table class="table table-striped table table-bordered ">
+                        <thead>
+                            <tr>
+                                <th  scope="col ">Subject</th>
+                                <th scope="col">Grade</th>
+                                <th scope="col">Teacher</th>
+                               
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td > Language Arts</td>
+                                <td>98</td>
+                                <td>O. Thomas</td>
+                               
+                            </tr>
+                            <tr>
+                                <td>Mathematic</td>
+                                <td>95</td>
+                                <td>M. Thornton</td>
+                              
+                            </tr>
+
+                            <tr>
+                                <td>Social Studies</td>
+                                <td>100</td>
+                                <td>P. Palmer</td>
+                            
+                            </tr>
+
+                            <tr>
+                                <td>Integrated Science</td>
+                                <td>90</td>
+                                <td>M. Thornton</td>
+                            
+                            </tr>
+
+                            <tr>
+                                <td>Religious Education</td>
+                                <td>100</td>
+                                <td>K. Brown</td>
+                            
+                            </tr>
+
+                            <tr>
+                                <td>Physical Education</td>
+                                <td>100</td>
+                                <td>R. Johnson</td>
+                            
+                            </tr>
+                            <tr>
+                                <td>Music</td>
+                                <td>94</td>
+                                <td>O. Foster</td>
+                            
+                            </tr>
+                            <tr>
+                                <td>Spanish</td>
+                                <td>92</td>
+                                <td>L. Questa</td>
+                            
+                            </tr>
+
+                            <tr>
+                                <td>Visual Arts</td>
+                                <td>100</td>
+                                <td>D. Duncun</td>
+                            
+                            </tr>
+
+                            <tr>
+                                <td>Information Technology</td>
+                                <td>87</td>
+                                <td>A. Benson</td>
+                            
+                            </tr>
+                            <tr>
+                                <td>Drama</td>
+                                <td>98</td>
+                                <td>D. Duncun</td>
+                            
+                            </tr>
+                           
+                        </tbody>
+                    </table>
+                    </div>
+                </div>
+
+               </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Chart.js library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+    
+    <!-- Your JavaScript code to initialize and populate the chart -->
+    <script src="scripts/mychart.js"></script>
+    <script src="scripts/site.js"></script>
+
+
+
+
+</body>
+
+</html>

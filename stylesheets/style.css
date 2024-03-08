@@ -17,22 +17,41 @@ h6 {
 }
 
 
-
-
-
 #banner {
     padding: 10px;
     font-size: 25px;
-    
+    align-self: center;
 }
 
 .justified-text {
     text-align: justify;
 }
 
-
 a {
   color: white;  
+}
+
+.center {
+    margin: auto;
+    width: 30%;
+    padding: 10px;
+}
+
+.vertical-line {
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    /* Adjust the color and thickness as needed */
+    height: 100%;
+    /* Ensures the line stretches to the full height of the column */
+}
+
+.navbar-brand {
+    img {
+        display: inline-block;
+        margin-right: 8px;
+        width: 50px;
+        height: 50px;
+    }
 }
 
 
@@ -43,6 +62,13 @@ footer {
     padding: 30px;
     text-align: center;
 }
+
+
+#signatureCanvas {
+    border: 1px solid #ccc;
+    cursor: crosshair;
+}
+
 
 
 
