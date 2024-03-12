@@ -1,6 +1,10 @@
 function ClearForm() {
     alert('You click clear function external');
 }
+function petition() {
+    alert('Thank you for voting');
+    //clearCanvas()
+}
 
 $(function () {
     var pages = ['index', 'about', 'contact'];
@@ -15,8 +19,48 @@ $(function () {
         }
     });
 
-
 });
+
+
+///////create a signature/////////////////////////////////////////
+var canvas = document.getElementById('signatureCanvas');
+var ctx = canvas.getContext('2d');
+var isDrawing = false;
+var lastX = 0;
+var lastY = 0;
+
+canvas.addEventListener('mousedown', (e) => {
+    isDrawing = true;
+    [lastX, lastY] = [e.offsetX, e.offsetY];
+});
+
+canvas.addEventListener('mousemove', draw);
+
+canvas.addEventListener('mouseup', () => {
+    isDrawing = false;
+});
+
+canvas.addEventListener('mouseout', () => {
+    isDrawing = false;
+});
+
+function draw(e) {
+    if (!isDrawing) return;
+    ctx.beginPath();
+    ctx.moveTo(lastX, lastY);
+    ctx.lineTo(e.offsetX, e.offsetY);
+    ctx.strokeStyle = '#000';
+    ctx.lineWidth = 2;
+    ctx.lineCap = 'round';
+    ctx.stroke();
+    [lastX, lastY] = [e.offsetX, e.offsetY];
+}
+
+function clearCanvas() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+}
+
+////////////////////////////////////////////////////////////////////////////
 
 
 //////// Hide and Show Divs in Dashboard //////////////////
@@ -39,7 +83,7 @@ function hideSection(section) {
     switch (section) {
         case 'dashboard':
             grade.style.display = 'none';
-            // report.style.display = 'none';
+            report.style.display = 'none';
             // attendance.style.display = 'none';
             // comments.style.display = 'none';
             // fees.style.display = 'none';
@@ -50,7 +94,7 @@ function hideSection(section) {
             break;
         case 'grades':
 
-            // report.style.display = 'none';
+            report.style.display = 'none';
             // attendance.style.display = 'none';
             // comments.style.display = 'none';
             // fees.style.display = 'none';
@@ -62,11 +106,11 @@ function hideSection(section) {
             break;
         case 'report':
             grade.style.display = 'none';
-            attendance.style.display = 'none';
-            comments.style.display = 'none';
-            fees.style.display = 'none';
-            petition.style.display = 'none';
-            suggestion.style.display = 'none';
+            // attendance.style.display = 'none';
+            // comments.style.display = 'none';
+            // fees.style.display = 'none';
+            // petition.style.display = 'none';
+            // suggestion.style.display = 'none';
             dashboard.style.display = 'none';
             report.style.display = 'block';
             // code to execute if expression === value2
@@ -151,45 +195,6 @@ function hideSection(section) {
 /////////////////////////////////////////////////////
 
 
-///////create a signature/////////////////////////////////////////
-var canvas = document.getElementById('signatureCanvas');
-var ctx = canvas.getContext('2d');
-var isDrawing = false;
-var lastX = 0;
-var lastY = 0;
-
-canvas.addEventListener('mousedown', (e) => {
-    isDrawing = true;
-    [lastX, lastY] = [e.offsetX, e.offsetY];
-});
-
-canvas.addEventListener('mousemove', draw);
-
-canvas.addEventListener('mouseup', () => {
-    isDrawing = false;
-});
-
-canvas.addEventListener('mouseout', () => {
-    isDrawing = false;
-});
-
-function draw(e) {
-    if (!isDrawing) return;
-    ctx.beginPath();
-    ctx.moveTo(lastX, lastY);
-    ctx.lineTo(e.offsetX, e.offsetY);
-    ctx.strokeStyle = '#000';
-    ctx.lineWidth = 2;
-    ctx.lineCap = 'round';
-    ctx.stroke();
-    [lastX, lastY] = [e.offsetX, e.offsetY];
-}
-
-function clearCanvas() {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-}
-
-////////////////////////////////////////////////////////////////////////////
 
 
 

@@ -32,23 +32,25 @@
 
                 </ul>
                 <form class="d-flex">
-                    <a  href="index.html" class="btn btn-outline-success">Logout</a>
+                    <a href="index.html" class="btn btn-outline-success">Logout</a>
                 </form>
             </div>
         </div>
     </nav>
 
-    <!-- Dashboard content -->
+
     <div class="m-4 mt-1">
         <div class="row">
+            <!-- Side Panel and  -->
             <div class="col-2 " style="color: rgb(125, 125, 125);">
                 <br>
-                <div class="d-flex color-secondary" style="color: rgb(158, 147, 221);" onclick=" hideSection('dashboard')" >
+                <div class="d-flex color-secondary" style="color: rgb(158, 147, 221);"
+                    onclick=" hideSection('dashboard')">
                     <i class="fas fa-tachometer-alt m-2"></i>
                     <a type="button">
                         <h5 class="mt-1">Dashboard</h5>
                     </a>
-                    
+
                 </div>
                 <br>
 
@@ -56,284 +58,689 @@
 
                 <div class="d-flex color-secondary" onclick=" hideSection('grades')">
                     <i class="fas fa-chart-line m-2"></i>
-                    <a type="button"  ><h6 class="mt-2">Grades</h6></a>
+                    <a type="button">
+                        <h6 class="mt-2">Grades</h6>
+                    </a>
                 </div>
-                <div  class="d-flex color-secondary" onclick=" hideSection('index.html')" >
-                    <i class="fas fa-file m-2 " ></i>
+                <div class="d-flex color-secondary" onclick=" hideSection('report')">
+                    <i class="fas fa-file m-2 "></i>
                     <a type="button">
                         <h6 class="mt-2">Report Card</h6>
                     </a>
-                   
+
                 </div>
-                
-                <div class="d-flex color-secondary" onclick=" hideSection('index.html')" >
+
+                <div class="d-flex color-secondary" onclick=" hideSection('attendance')">
                     <i class="fas fa-pencil-alt m-2"></i>
                     <a type="button">
                         <h6 class="mt-2">Attendance</h6>
                     </a>
-                    
+
 
                 </div>
-                <div class="d-flex color-secondary" onclick=" hideSection('index.html')">
+                <div class="d-flex color-secondary" onclick=" hideSection('comments')">
                     <i class="fas fa-window-maximize m-2"></i>
                     <a type="button">
                         <h6 class="mt-2">Comments</h6>
                     </a>
-                    
+
                 </div>
-                <div class="d-flex color-secondary" onclick=" hideSection('index.html')">
+                <div class="d-flex color-secondary" onclick=" hideSection('fees')">
                     <i class="fas fa-dollar-sign m-2 "></i>
                     <a type="button">
                         <h6 class="mt-2 m-2">Fees</h6>
                     </a>
-                    
+
                 </div>
-                <div class="d-flex color-secondary" onclick=" hideSection('index.html')">
+                <div class="d-flex color-secondary" onclick=" hideSection('petition')">
                     <i class="fas fa-signature m-2"></i>
                     <a type="button">
                         <h6 class="mt-2">Petition</h6>
                     </a>
-                    
+
                 </div>
 
-                <div class="d-flex color-secondary" onclick=" hideSection('index.html')">
+                <div class="d-flex color-secondary" onclick=" hideSection('suggestion')">
                     <i class="fas fa-box m-2"></i>
                     <a type="button">
                         <h6 class="mt-2">Suggestion Box</h6>
                     </a>
-                   
+
                 </div>
 
             </div>
-            <div id="dashboard" class="col-10" >
+            <!-- Dashboard Content -->
+            <div id="dashboard" class="col-10" hidden>
                 <div class="row">
 
-               
+                    <!-- Second Column -->
+                    <div class="col-8 vertical-line">
+                        <br>
+                        <div class="card bg-warning border-warning m-2 " style="width: 38rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">Welcom back, James Brown</h5>
+                                <br>
+                                <p class="card-text">You have successfully completed about
+                                    60% of your studies. Keep it up!</p>
+                            </div>
 
-           
-            <!-- Second Column -->
-            <div class="col-8 vertical-line">
-                <br>
-                <div  class="card bg-warning border-warning m-2 " style="width: 38rem;" >
-                    <div class="card-body">
-                        <h5 class="card-title" >Welcom back, James Brown</h5>
-                       <br>
-                        <p class="card-text">You have successfully completed about
-                        60% of your studies. Keep it up!</p> 
-                    </div>
-
-                </div>
-                <div class="row">
-                    <div class="col m-2">
-                        <img src="images/kidphoto.jpg" class="rounded" width="280" alt="...">
-                    </div>
-
-                    <div  class="col m-2">
-                        <h4>JAMES C. BROWN</h4>
-                        
+                        </div>
                         <div class="row">
-                            <div class="col-5 ">
-                                <p style="font-weight: 500;">Student ID:  <br> Gender: <br>DOB: <br> Contact: <br>  Email: <br>Nationality: </p>
-                               
-                                
+                            <div class="col m-2">
+                                <img src="images/kidphoto.jpg" class="rounded" width="280" alt="...">
                             </div>
-                            <div class="col-6">
-                                <p>3200162 <br> Male <br>June 11, 2017 <br> 876 342-5162 <br> jbrown@bprep.edu <br>Jamaican </p>
 
+                            <div class="col m-2">
+                                <h4>JAMES C. BROWN</h4>
+
+                                <div class="row">
+                                    <div class="col-5 ">
+                                        <p style="font-weight: 500;">Student ID: <br> Gender: <br>DOB: <br> Contact:
+                                            <br> Email: <br>Nationality:
+                                        </p>
+
+
+                                    </div>
+                                    <div class="col-6">
+                                        <p>3200162 <br> Male <br>June 11, 2017 <br> 876 342-5162 <br> jbrown@bprep.edu
+                                            <br>Jamaican
+                                        </p>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <br>
+                        <br>
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <!-- Chart.js canvas for the bar graph -->
+                                    <canvas id="myChart" width="400" height="400"></canvas>
+                                </div>
                             </div>
                         </div>
 
+
+
+
+
+
+
+                    </div>
+                    <!-- Third Column -->
+                    <div class="col-4 mt-4">
+                        <div class="card " style="background-color: rgb(199, 155, 230); color: rgb(254, 254, 254);">
+                            <div class="card-body">
+                                <div class="d-flex">
+
+                                    <div class="text-center ">
+                                        <p style="font-weight: 500; font-size: 14px;">Total Days</h6>
+                                        <h4 style="font-weight: 900;">180</h4>
+                                    </div>
+                                    <hr>
+                                    <div class="text-center mx-2 ">
+                                        <p style="font-weight: 500; font-size: 14px;">Present</h6>
+                                        <h4 style="font-weight: 900;">98%</h4>
+                                    </div>
+
+                                    <div class="text-center mx-2 ">
+                                        <p style="font-weight: 500; font-size: 14px;">Absent</h6>
+                                        <h4 style="font-weight: 900;">2%</h4>
+                                    </div>
+
+
+                                    <div class="text-center mx-2 ">
+                                        <p style="font-weight: 500; font-size: 14px;">Late</h6>
+                                        <h4 style="font-weight: 900;">0%</h4>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card mt-2" style="background-color: rgb(155, 230, 225); color: rgb(255, 255, 255);">
+                            <div class="card-body">
+                                <div class="text-center">
+                                    <p style="font-size: larger; font-weight: 900;">GPA</p>
+                                    <p style="font-size: 50px;  font-weight: 900;">3.90</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Grades Table -->
+            <div id="grades" class="col" hidden>
+                <div class="m-4">
+
+                    <div class="card text-center">
+                        <div class="card-header">
+                            <ul class="nav nav-tabs card-header-tabs">
+                                <li class="nav-item">
+                                    <a class="nav-link " aria-current="true" href="#">Christmas Term</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Easter Term</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="true">Summer Term</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card-body">
+                            <table class="table table-striped table table-bordered ">
+                                <thead>
+                                    <tr>
+                                        <th scope="col ">Subject</th>
+                                        <th scope="col">Grade</th>
+                                        <th scope="col">Teacher</th>
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td> Language Arts</td>
+                                        <td>98</td>
+                                        <td>O. Thomas</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>Mathematic</td>
+                                        <td>95</td>
+                                        <td>M. Thornton</td>
+
+                                    </tr>
+
+                                    <tr>
+                                        <td>Social Studies</td>
+                                        <td>100</td>
+                                        <td>P. Palmer</td>
+
+                                    </tr>
+
+                                    <tr>
+                                        <td>Integrated Science</td>
+                                        <td>90</td>
+                                        <td>M. Thornton</td>
+
+                                    </tr>
+
+                                    <tr>
+                                        <td>Religious Education</td>
+                                        <td>100</td>
+                                        <td>K. Brown</td>
+
+                                    </tr>
+
+                                    <tr>
+                                        <td>Physical Education</td>
+                                        <td>100</td>
+                                        <td>R. Johnson</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>Music</td>
+                                        <td>94</td>
+                                        <td>O. Foster</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>Spanish</td>
+                                        <td>92</td>
+                                        <td>L. Questa</td>
+
+                                    </tr>
+
+                                    <tr>
+                                        <td>Visual Arts</td>
+                                        <td>100</td>
+                                        <td>D. Duncun</td>
+
+                                    </tr>
+
+                                    <tr>
+                                        <td>Information Technology</td>
+                                        <td>87</td>
+                                        <td>A. Benson</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>Drama</td>
+                                        <td>98</td>
+                                        <td>D. Duncun</td>
+
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
 
                 </div>
+            </div>
+            <!-- Report Card -->
+            <div id="report" class="col" hidden>
                 <br>
-                <br>
-                
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <!-- Chart.js canvas for the bar graph -->
-                            <canvas id="myChart" width="400" height="400"></canvas>
-                        </div>
-                    </div>
-                </div>
-
-                
-              
-               
-               
-                <!-- <div>
-                    <canvas id="signatureCanvas" width="300" height="150"></canvas>
-                    <button onclick="clearCanvas()">Clear Signature</button>
-                </div> -->
-
-            </div>
-            <!-- Third Column -->
-            <div class="col-4 mt-4">
-                <div class="card " style="background-color: rgb(199, 155, 230); color: rgb(254, 254, 254);">
-                    <div class="card-body">
-                       <div class="d-flex">
-
-                        <div class="text-center "> 
-                            <p style="font-weight: 500; font-size: 14px;">Total Days</h6>
-                            <h4 style="font-weight: 900;">180</h4>
-                        </div>
-<hr>
-                        <div class="text-center mx-2 ">
-                            <p style="font-weight: 500; font-size: 14px;">Present</h6>
-                            <h4 style="font-weight: 900;">98%</h4>
-                        </div>
-
-                        <div class="text-center mx-2 ">
-                            <p style="font-weight: 500; font-size: 14px;">Absent</h6>
-                            <h4 style="font-weight: 900;">2%</h4>
-                        </div>
-
-
-                        <div class="text-center mx-2 ">
-                            <p style="font-weight: 500; font-size: 14px;">Late</h6>
-                            <h4 style="font-weight: 900;">0%</h4>
-                        </div>
-                        
-
-                       </div>
-                    </div>
-                </div>
-
-                <div class="card mt-2" style="background-color: rgb(155, 230, 225); color: rgb(255, 255, 255);">
-                    <div class="card-body">
-                        <div class="text-center">
-                            <p style="font-size: larger; font-weight: 900;">GPA</p>
-                            <p style="font-size: 50px;  font-weight: 900;">3.90</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            </div>
-            </div>
-
-            <div id="grades" class="col">
-               <div class="m-4">
-                
-                <div class="card text-center">
+                <h1>Report Cards</h1>
+                <div class="card">
                     <div class="card-header">
                         <ul class="nav nav-tabs card-header-tabs">
                             <li class="nav-item">
-                                <a class="nav-link " aria-current="true" href="#">Christmas Term</a>
+                                <a class="nav-link active" aria-current="true" href="#">Christmas Term</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Easter Term</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="true">Summer Term</a>
+                                <a class="nav-link" href="#">Summer Term</a>
                             </li>
                         </ul>
                     </div>
                     <div class="card-body">
-                    <table class="table table-striped table table-bordered ">
-                        <thead>
-                            <tr>
-                                <th  scope="col ">Subject</th>
-                                <th scope="col">Grade</th>
-                                <th scope="col">Teacher</th>
-                               
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td > Language Arts</td>
-                                <td>98</td>
-                                <td>O. Thomas</td>
-                               
-                            </tr>
-                            <tr>
-                                <td>Mathematic</td>
-                                <td>95</td>
-                                <td>M. Thornton</td>
-                              
-                            </tr>
-
-                            <tr>
-                                <td>Social Studies</td>
-                                <td>100</td>
-                                <td>P. Palmer</td>
-                            
-                            </tr>
-
-                            <tr>
-                                <td>Integrated Science</td>
-                                <td>90</td>
-                                <td>M. Thornton</td>
-                            
-                            </tr>
-
-                            <tr>
-                                <td>Religious Education</td>
-                                <td>100</td>
-                                <td>K. Brown</td>
-                            
-                            </tr>
-
-                            <tr>
-                                <td>Physical Education</td>
-                                <td>100</td>
-                                <td>R. Johnson</td>
-                            
-                            </tr>
-                            <tr>
-                                <td>Music</td>
-                                <td>94</td>
-                                <td>O. Foster</td>
-                            
-                            </tr>
-                            <tr>
-                                <td>Spanish</td>
-                                <td>92</td>
-                                <td>L. Questa</td>
-                            
-                            </tr>
-
-                            <tr>
-                                <td>Visual Arts</td>
-                                <td>100</td>
-                                <td>D. Duncun</td>
-                            
-                            </tr>
-
-                            <tr>
-                                <td>Information Technology</td>
-                                <td>87</td>
-                                <td>A. Benson</td>
-                            
-                            </tr>
-                            <tr>
-                                <td>Drama</td>
-                                <td>98</td>
-                                <td>D. Duncun</td>
-                            
-                            </tr>
-                           
-                        </tbody>
-                    </table>
+                        <img src="images/report.jpg" alt="report" width="100%" height="100%">
                     </div>
+
                 </div>
 
-               </div>
             </div>
-        </div>
-    </div>
+
+            <!-- Attendance -->
+            <div id="attendance" class="col" hidden>
+                <br>
+                <h1>Attendance</h1>
+                <div class="card">
+                    <div class="card-header">
+                        <ul class="nav nav-tabs card-header-tabs">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="true" href="#">Christmas Term</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Easter Term</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Summer Term</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-body">
+                        <table class="table table-striped table table-bordered ">
+                            <thead>
+                                <tr>
+                                    <th scope="col ">Week</th>
+                                    <th scope="col">Week Commencing</th>
+                                    <th scope="col">Mon</th>
+                                    <th scope="col">Tue</th>
+                                    <th scope="col">Wed</th>
+                                    <th scope="col">Thur</th>
+                                    <th scope="col">Fri</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Sept 6, 2021</td>
+                                    <td><i class="fas fa-circle" style="color: green;"></i></td>
+                                    <td><i class="fas fa-circle" style="color: green;"></i></td>
+                                    <td><i class="fas fa-circle" style="color: green;"></i></td>
+                                    <td><i class="fas fa-circle" style="color: red;"></i></td>
+                                    <td><i class="fas fa-circle" style="color: green;"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Sept 13, 2021</td>
+                                    <td><i class="fas fa-circle" style="color: green;"></i></td>
+                                    <td><i class="fas fa-circle" style="color: green;"></i></td>
+                                    <td><i class="fas fa-circle" style="color: green;"></i></td>
+                                    <td><i class="fas fa-circle" style="color: green;"></i></td>
+                                    <td><i class="fas fa-circle" style="color: red;"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Sept 20, 2021</td>
+                                    <td><i class="fas fa-circle" style="color: green;"></i></td>
+                                    <td><i class="fas fa-circle" style="color: green;"></i></td>
+                                    <td><i class="fas fa-circle" style="color: green;"></i></td>
+                                    <td><i class="fas fa-circle" style="color: green;"></i></td>
+                                    <td><i class="fas fa-circle" style="color: green;"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Sept 27, 2021</td>
+                                    <td><i class="fas fa-circle" style="color: green;"></i></td>
+                                    <td><i class="fas fa-circle" style="color: green;"></i></td>
+                                    <td><i class="fas fa-circle" style="color: green;"></i></td>
+                                    <td><i class="fas fa-circle" style="color: green;"></i></td>
+                                    <td><i class="fas fa-circle" style="color: green;"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>Oct 4, 2021</td>
+                                    <td><i class="fas fa-circle" style="color: green;"></i></td>
+                                    <td><i class="fas fa-circle" style="color: green;"></i></td>
+                                    <td><i class="fas fa-circle" style="color: green;"></i></td>
+                                    <td><i class="fas fa-circle" style="color: green;"></i></td>
+                                    <td><i class="fas fa-circle" style="color: green;"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>Oct 11, 2021</td>
+                                    <td><i class="fas fa-circle" style="color: red;"></i></td>
+                                    <td><i class="fas fa-circle" style="color: green;"></i></td>
+                                    <td><i class="fas fa-circle" style="color: green;"></i></td>
+                                    <td><i class="fas fa-circle" style="color: green;"></i></td>
+                                    <td><i class="fas fa-circle" style="color: green;"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>Oct 18, 2021</td>
+                                    <td><i class="fas fa-circle" style="color: green;"></i></td>
+                                    <td><i class="fas fa-circle" style="color: green;"></i></td>
+                                    <td><i class="fas fa-circle" style="color: green;"></i></td>
+                                    <td><i class="fas fa-circle" style="color: green;"></i></td>
+                                    <td><i class="fas fa-circle" style="color: green;"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td>Oct 25, 2021</td>
+                                    <td><i class="fas fa-circle" style="color: green;"></i></td>
+                                    <td><i class="fas fa-circle" style="color: green;"></i></td>
+                                    <td><i class="fas fa-circle" style="color: green;"></i></td>
+                                    <td><i class="fas fa-circle" style="color: green;"></i></td>
+                                    <td><i class="fas fa-circle" style="color: green;"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <td>Nov 1, 2021</td>
+                                    <td><i class="fas fa-circle" style="color: green;"></i></td>
+                                    <td><i class="fas fa-circle" style="color: green;"></i></td>
+                                    <td><i class="fas fa-circle" style="color: green;"></i></td>
+                                    <td><i class="fas fa-circle" style="color: green;"></i></td>
+                                    <td><i class="fas fa-circle" style="color: green;"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>10</td>
+                                    <td>Nov 8, 2021</td>
+                                    <td><i class="fas fa-circle" style="color: green;"></i></td>
+                                    <td><i class="fas fa-circle" style="color: green;"></i></td>
+                                    <td><i class="fas fa-circle" style="color: green;"></i></td>
+                                    <td><i class="fas fa-circle" style="color: green;"></i></td>
+                                    <td><i class="fas fa-circle" style="color: green;"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>11</td>
+                                    <td>Nov 15, 2021</td>
+                                    <td><i class="fas fa-circle" style="color: green;"></i></td>
+                                    <td><i class="fas fa-circle" style="color: green;"></i></td>
+                                    <td><i class="fas fa-circle" style="color: green;"></i></td>
+                                    <td><i class="fas fa-circle" style="color: green;"></i></td>
+                                    <td><i class="fas fa-circle" style="color: green;"></i></td>
+
+                                </tr>
+                                <tr>
+                                    <td>12</td>
+                                    <td>Nov 22, 2021</td>
+                                    <td><i class="fas fa-circle" style="color: green;"></i></td>
+                                    <td><i class="fas fa-circle" style="color: green;"></i></td>
+                                    <td><i class="fas fa-circle" style="color:red;"></i></td>
+                                    <td><i class="fas fa-circle" style="color: green;"></i></td>
+                                    <td><i class="fas fa-circle" style="color: green;"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>13</td>
+                                    <td>Nov 29, 2021</td>
+                                    <td><i class="fas fa-circle" style="color: green;"></i></td>
+                                    <td><i class="fas fa-circle" style="color: green;"></i></td>
+                                    <td><i class="fas fa-circle" style="color: green;"></i></td>
+                                    <td><i class="fas fa-circle" style="color: green;"></i></td>
+                                    <td><i class="fas fa-circle" style="color: green;"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>14</td>
+                                    <td>Dec 6, 2021</td>
+                                    <td><i class="fas fa-circle" style="color: green;"></i></td>
+                                    <td><i class="fas fa-circle" style="color: green;"></i></td>
+                                    <td><i class="fas fa-circle" style="color: green;"></i></td>
+                                    <td><i class="fas fa-circle" style="color: green;"></i></td>
+                                    <td><i class="fas fa-circle" style="color: green;"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>15</td>
+                                    <td>Dec 13, 2021</td>
+                                    <td><i class="fas fa-circle" style="color: green;"></i></td>
+                                    <td><i class="fas fa-circle" style="color: green;"></i></td>
+                                    <td><i class="fas fa-circle" style="color: green;"></i></td>
+                                    <td><i class="fas fa-circle" style="color: green;"></i></td>
+                                    <td><i class="fas fa-circle" style="color: green;"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>16</td>
+                                    <td>Dec 20, 2021</td>
+                                    <td><i class="fas fa-circle" style="color: green;"></i></td>
+                                    <td><i class="fas fa-circle" style="color: green;"></i></td>
+                                    <td><i class="fas fa-circle" style="color: green;"></i></td>
+                                    <td><i class="fas fa-circle" style="color: green;"></i></td>
+                                    <td><i class="fas fa-circle" style="color: green;"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>17</td>
+                                    <td>Dec 27, 2021</td>
+                                    <td><i class="fas fa-circle" style="color: green;"></i></td>
+                                    <td><i class="fas fa-circle" style="color: green;"></i></td>
+                                    <td><i class="fas fa-circle" style="color: green;"></i></td>
+                                    <td><i class="fas fa-circle" style="color: green;"></i></td>
+                                    <td><i class="fas fa-circle" style="color: green;"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>18</td>
+                                    <td>Jan 3, 2022</td>
+                                    <td><i class="fas fa-circle" style="color: green;"></i></td>
+                                    <td><i class="fas fa-circle" style="color: green;"></i></td>
+                                    <td><i class="fas fa-circle" style="color: green;"></i></td>
+                                    <td><i class="fas fa-circle" style="color: green;"></i></td>
+                                    <td><i class="fas fa-circle" style="color: green;"></i></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Comments -->
+            <div id="comments" class="col" hidden>
+                <br>
+                <h1>Comments</h1>
+                <div class="card">
+                    <div class="card-header">
+                        <ul class="nav nav-tabs card-header-tabs">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="true" href="#">Christmas Term</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Easter Term</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Summer Term</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="card-body">
+                        <div class="card">
+                            <div class="card-header">
+                                Principal
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">It has come to my attention that James has been excelling both
+                                    academically and socially. His positive attitude and
+                                    willingness to go the extra mile are truly commendable. James serves as a role model
+                                    for his peers.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                Vice Principal
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">James's recent progress report is outstanding. His commitment to
+                                    his studies and active participation in extracurricular
+                                    activities showcases well-rounded development. We are proud to have him as a student
+                                    at our school.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                Grade Coordinator
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">James has consistently impressed me with his dedication and work
+                                    ethic. He not only grasps concepts quickly but also
+                                    actively participates in class discussions, contributing valuable insights. Keep up
+                                    the excellent work!</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                Teacher
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">James has been doing an outstanding job in his studies. He has been
+                                    very consistent in his attendance and has been performing well in all his subjects.
+                                    Keep up the good work!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fees -->
+            <div id="fees" class="col" hidden>
+                <br>
+                <h1>Fees</h1>
+                <div class="card">
+                    <div class="card-header">
+                        <ul class="nav nav-tabs card-header-tabs">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="true" href="#">Christmas Term</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Easter Term</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Summer Term</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-body">
+                        <table class="table table-striped table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th scope="col ">Item</th>
+                                    <th scope="col">Amount</th>
+                                    <th scope="col">Status</th>
+                                    <th scope="col">Due Date</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Tuition</td>
+                                    <td>$50,000</td>
+                                    <td>Paid</td>
+                                    <td>Sept 30, 2024</td>
+                                </tr>
+                                <tr>
+                                    <td>Books</td>
+                                    <td>$10,000</td>
+                                    <td>Paid</td>
+                                    <td>Sept 30, 2024</td>
+                                </tr>
+                                <tr>
+                                    <td>Uniform</td>
+                                    <td>$15,000</td>
+                                    <td>Unpaid</td>
+                                    <td>Sept 30, 2024</td>
+                                </tr>
+                                <tr>
+                                    <td>Field Trip</td>
+                                    <td>$5,000</td>
+                                    <td>Unpaid</td>
+                                    <td>Sept 30, 2024</td>
+                                </tr>
+                                <tr>
+                                    <td>Extracurricular</td>
+                                    <td>$5,000</td>
+                                    <td>Paid</td>
+                                    <td>Sept 30, 2024</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Petition -->
+            <!-- create a petition page where parents can vote on a issue by signing their signature and the petition vote goes up by one. the page should also have a buttom that says create petition do not make it using a card -->
+            <div id="petition" class="col vertical-line-single ">
+                <br>
+                <!-- <h1>Vote</h1> -->
+                <div class="col">
+                    <br>
+                    
+                    <br>
+                    <br>
+                    <div col class="text-center">
+                        <h5>SIGN YOUR SIGNATURE IN THE BOX BELOW</h5>
+                        <br>
+                        <canvas id="signatureCanvas" width="300" height="150"></canvas>
+                        <br>
+                        <br>
+                        <h2 class="text-center">"Should student be allowed to take phone to class "</h2>
+                        <br>
+                        <br>
+
+                        <div class="row" onclick="petition()">
+                            <div class="col mx-5 bg-success" style="width: 150px;" >
+                                <i class="fas fa-arrow-up m-2  text-white "></i>
+                                <a type="button" onclick="petition()" class="btn btn-success">YES</a>
+                            </div>
+                            <div class="col mx-5 bg-danger" style="width: 150px;">
+                                <i class="fas fa-arrow-down m-2 text-white "></i>
+                                <a type="button" onclick="petition()" class="btn btn-danger">NO</a>
+                            </div>
+                        </div>
+                    
 
 
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Chart.js library -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
-    
-    <!-- Your JavaScript code to initialize and populate the chart -->
-    <script src="scripts/mychart.js"></script>
-    <script src="scripts/site.js"></script>
+
+                    </div>
+
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+
+                </div>
+
+
+
+
+            </div>
+
+
+            <!-- jQuery -->
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+            <!-- Bootstrap JS -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+            <!-- Chart.js library -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+
+            <!-- Your JavaScript code to initialize and populate the chart -->
+            <script src="scripts/mychart.js"></script>
+            <script src="scripts/site.js"></script>
 
 
 
