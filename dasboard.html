@@ -110,7 +110,7 @@
 
             </div>
             <!-- Dashboard Content -->
-            <div id="dashboard" class="col-10" hidden>
+            <div id="dashboard" class="col-10">
                 <div class="row">
 
                     <!-- Second Column -->
@@ -215,10 +215,12 @@
                 </div>
             </div>
             <!-- Grades Table -->
-            <div id="grades" class="col" hidden>
-                <div class="m-4">
+            <div id="grades" class="col vertical-line-single"  hidden>
+                <div class="">
+                  <br>
+                    <h1>Grade Sheet</h1>
 
-                    <div class="card text-center">
+                    <div class="card text-center" style="width: 90%;">
                         <div class="card-header">
                             <ul class="nav nav-tabs card-header-tabs">
                                 <li class="nav-item">
@@ -324,11 +326,11 @@
                 </div>
             </div>
             <!-- Report Card -->
-            <div id="report" class="col" hidden>
+            <div id="report" class="col vertical-line-single" hidden>
                 <br>
                 <h1>Report Cards</h1>
-                <div class="card">
-                    <div class="card-header">
+                <div class="card" style="width: 90%;">
+                    <div class="card-header" >
                         <ul class="nav nav-tabs card-header-tabs">
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="true" href="#">Christmas Term</a>
@@ -350,10 +352,10 @@
             </div>
 
             <!-- Attendance -->
-            <div id="attendance" class="col" hidden>
+            <div id="attendance" class="col vertical-line-single" hidden>
                 <br>
                 <h1>Attendance</h1>
-                <div class="card">
+                <div class="card" style="width: 90%;">
                     <div class="card-header">
                         <ul class="nav nav-tabs card-header-tabs">
                             <li class="nav-item">
@@ -551,10 +553,10 @@
             </div>
 
             <!-- Comments -->
-            <div id="comments" class="col" hidden>
+            <div id="comments" class="col vertical-line-single" hidden>
                 <br>
                 <h1>Comments</h1>
-                <div class="card">
+                <div class="card" style="width: 75%;">
                     <div class="card-header">
                         <ul class="nav nav-tabs card-header-tabs">
                             <li class="nav-item">
@@ -618,10 +620,10 @@
             </div>
 
             <!-- Fees -->
-            <div id="fees" class="col" hidden>
+            <div id="fees" class="col vertical-line-single" hidden>
                 <br>
                 <h1>Fees</h1>
-                <div class="card">
+                <div class="card" style="width: 70%;">
                     <div class="card-header">
                         <ul class="nav nav-tabs card-header-tabs">
                             <li class="nav-item">
@@ -683,8 +685,7 @@
             </div>
 
             <!-- Petition -->
-            <!-- create a petition page where parents can vote on a issue by signing their signature and the petition vote goes up by one. the page should also have a buttom that says create petition do not make it using a card -->
-            <div id="petition" class="col vertical-line-single ">
+            <div id="petition" class="col vertical-line-single "hidden>
                 <br>
                 <!-- <h1>Vote</h1> -->
                 <div class="col">
@@ -729,6 +730,40 @@
 
 
             </div>
+
+            <!-- Suggestion Box -->
+            <!-- I want a div area that files can be drag and drop from file explorer or give the user the option to click a button to browse the filesystem on the computer the display the name of the document that was picked -->
+            <div id="suggestion" class="col vertical-line-single" hidden>
+                <br>
+                <h1 class="px-4">Suggestion Box</h1>
+                <br>
+               
+                    
+                <div class=" px-5" style="width: 70%;">
+                        <form>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Subject</label>
+                                <input type="text" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="Subject of Suggestion">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label">Suggestion</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                    placeholder="Type your suggestion here"></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <label for="formFile" class="form-label">Attach File</label>
+                                <input class="form-control" type="file" id="formFile">
+                            </div>
+                            <button type="reset" class="btn btn-primary" onclick="ClearForm()" >Submit</button>
+                        </form>
+                    </div>
+            </div>
+                
+
+            
+
+
 
 
             <!-- jQuery -->
