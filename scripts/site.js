@@ -2,9 +2,37 @@ function ClearForm() {
     alert('Thank you for your feedback');
     
 }
-function petition() {
-    alert('Thank you for voting');
-    //clearCanvas()
+function petition(vote) {
+    voteincrement(vote);
+    clearCanvas()
+}
+
+var voted = false;
+function voteincrement(vote) {
+    var yes = document.getElementById('yes');
+    var no = document.getElementById('no');
+
+    var canVote = checkSignature();
+    console.log(canVote);
+
+    if (!canVote) {
+        return;
+    }
+
+    if(voted){
+        alert('You have already voted');
+        return;
+    }
+    if(vote === 'yes'){
+        yes.innerHTML = parseInt(yes.innerHTML) + 1;
+        voted = true;
+        alert('Thank you for voting');
+    }else{
+        no.innerHTML = parseInt(no.innerHTML) + 1;
+        voted = true;
+        alert('Thank you for voting');
+    }
+    
 }
 
 $(function () {
@@ -41,7 +69,7 @@ function hideSection(section) {
 
 ///////create a signature/////////////////////////////////////////
 var canvas = document.getElementById('signatureCanvas');
-var ctx = canvas.getContext('2d');
+var ctxx = canvas.getContext('2d');
 var isDrawing = false;
 var lastX = 0;
 var lastY = 0;
@@ -63,146 +91,27 @@ canvas.addEventListener('mouseout', () => {
 
 function draw(e) {
     if (!isDrawing) return;
-    ctx.beginPath();
-    ctx.moveTo(lastX, lastY);
-    ctx.lineTo(e.offsetX, e.offsetY);
-    ctx.strokeStyle = '#000';
-    ctx.lineWidth = 2;
-    ctx.lineCap = 'round';
-    ctx.stroke();
+    ctxx.beginPath();
+    ctxx.moveTo(lastX, lastY);
+    ctxx.lineTo(e.offsetX, e.offsetY);
+    ctxx.strokeStyle = '#000';
+    ctxx.lineWidth = 2;
+    ctxx.lineCap = 'round';
+    ctxx.stroke();
     [lastX, lastY] = [e.offsetX, e.offsetY];
 }
 
 function clearCanvas() {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctxx.clearRect(0, 0, canvas.width, canvas.height);
 }
 
-////////////////////////////////////////////////////////////////////////////
-
-
-
-
-//     const dashboard = document.getElementById('dashboard');
-//     const grade = document.getElementById('grades');
-//     const report = document.getElementById('report');
-//     const attendance = document.getElementById('attendance');
-//     const comments = document.getElementById('comments');
-//     const fees = document.getElementById('fees');
-//     const petition = document.getElementById('petition');
-//     const suggestion = document.getElementById('suggestion');
-
-
-//     // Add click event listener to the toggleDiv
-//     // toggleDiv.addEventListener('click', function () {
-//     // Toggle visibility of firstDiv and secondDiv
-
-
-//     switch (section) {
-//         case 'dashboard':
-//             grade.setAttribute("hidden", true);
-//             report.setAttribute("hidden", true);
-//             attendance.setAttribute("hidden", true);
-//             comments.setAttribute("hidden", true);
-//             fees.setAttribute("hidden", true);
-//             petition.setAttribute("hidden", true);
-//             suggestion.setAttribute("hidden", true);
-//             dashboard.removeAttribute("hidden");
-//             break;
-//         case 'grades':
-//             report.setAttribute("hidden", true);
-//             attendance.setAttribute("hidden", true);
-//             comments.setAttribute("hidden", true);
-//             fees.setAttribute("hidden", true);
-//             petition.setAttribute("hidden", true);
-//             suggestion.setAttribute("hidden", true);
-//             dashboard.setAttribute("hidden", true);
-//             grade.removeAttribute("hidden");
-//             break;
-//         case 'report':
-//             grade.setAttribute("hidden", true);
-//             attendance.setAttribute("hidden", true);
-//             comments.setAttribute("hidden", true);
-//             fees.setAttribute("hidden", true);
-//             petition.setAttribute("hidden", true);
-//             suggestion.setAttribute("hidden", true);
-//             dashboard.setAttribute("hidden", true);
-//             report.removeAttribute("hidden");
-//             break;
-//         case 'attendance':
-//             report.setAttribute("hidden", true);
-//             comments.setAttribute("hidden", true);
-//             fees.setAttribute("hidden", true);
-//             petition.setAttribute("hidden", true);
-//             suggestion.setAttribute("hidden", true);
-//             dashboard.setAttribute("hidden", true);
-//             grade.setAttribute("hidden", true);
-//             attendance.removeAttribute("hidden");
-//             break;
-//         case 'comments':
-//             report.setAttribute("hidden", true);
-//             attendance.setAttribute("hidden", true);
-//             fees.setAttribute("hidden", true);
-//             petition.setAttribute("hidden", true);
-//             suggestion.setAttribute("hidden", true);
-//             dashboard.setAttribute("hidden", true);
-//             grade.setAttribute("hidden", true);
-//             comments.removeAttribute("hidden");
-//             break;
-//         case 'fees':
-//             report.setAttribute("hidden", true);
-//             attendance.setAttribute("hidden", true);
-//             comments.setAttribute("hidden", true);
-//             fees.setAttribute("hidden", true);
-//             petition.setAttribute("hidden", true);
-//             suggestion.setAttribute("hidden", true);
-//             dashboard.setAttribute("hidden", true);
-//             grade.setAttribute("hidden", true);
-//             fees.removeAttribute("hidden");
-//             break;
-//         case 'petition':
-//             report.setAttribute("hidden", true);
-//             attendance.setAttribute("hidden", true);
-//             comments.setAttribute("hidden", true);
-//             fees.setAttribute("hidden", true);
-//             suggestion.setAttribute("hidden", true);
-//             dashboard.setAttribute("hidden", true);
-//             grade.setAttribute("hidden", true);
-//             petition.removeAttribute("hidden");
-//             break;
-//         case 'suggestion':
-//             report.setAttribute("hidden", true);
-//             attendance.setAttribute("hidden", true);
-//             comments.setAttribute("hidden", true);
-//             fees.setAttribute("hidden", true);
-//             petition.setAttribute("hidden", true);
-//             dashboard.setAttribute("hidden", true);
-//             grade.setAttribute("hidden", true);
-//             suggestion.removeAttribute("hidden");
-//             break;
-//         // ... more cases
-//         default:
-//         // code to execute if no case matches
-//     }
-
-
-//     // if (firstDiv.style.display === 'none') {
-//     //     firstDiv.style.display = 'block';
-//     //     secondDiv.style.display = 'none';
-//     // } else {
-//     //     firstDiv.style.display = 'none';
-//     //     secondDiv.style.display = 'block';
-//     // }
-//     // });
-
-
-//     // Navigate to the provided URL
-//     // window.location.href = url;
-// }
-/////////////////////////////////////////////////////
-
-
-
-
+function checkSignature() {
+    if (lastX === 0 && lastY === 0) {
+        alert('Please sign the petition');
+        return false;
+    }
+    return true;
+}
 
 
 
